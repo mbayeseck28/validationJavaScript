@@ -127,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // Gestion du clic sur un jour spécifique
       let task = document.getElementById('tache');
       task.innerHTML = currentDate.toLocaleDateString(); // Affichage de la date dans un élément HTML
-      console.log('Jour sélectionné : ', currentDate.toLocaleDateString()); // Affichage de la date dans la console
 
       // Affichage de l'élément modal
       modal.style.display = 'block';

@@ -48,11 +48,13 @@ function afficherTableauDansDOM(tableau) {
     // Fonction pour modifier une tâche du localStorage (à adapter selon vos besoins)
     function modifierTache(index) {
       const key = cles[index]; // Récupérer la clé à partir de l'index
-      const nouvelleValeur = prompt(
-        'Entrez la nouvelle valeur pour la tâche :'
-      );
-      if (nouvelleValeur !== null) {
+
+      const tache = prompt('modifier la tache :');
+      const des = prompt('modifier la description :');
+      const dat = prompt('modifier la date :');
+      if (tache !== null && des !== null && dat !== null) {
         // Mettre à jour la valeur dans le localStorage
+        nouvelleValeur = `${tache},${des},${dat}`;
         localStorage.setItem(key, nouvelleValeur);
         location.reload(); // Recharger la page pour refléter les changements
       }

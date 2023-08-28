@@ -95,3 +95,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen AND (max-width: 550px){
+  .modal-conten {
+    position: relative;
+  }
+}
